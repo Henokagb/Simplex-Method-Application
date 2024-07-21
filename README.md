@@ -6,18 +6,18 @@ A use case using the mathematical method named 'Simplex' to resolve a problem
 A farmer grows grains: oat, wheat, corn, barley and soy. He uses four different types of fertilizers (F1, F2, F3
 et F4), in the following quantities (per ton of fertilizer in order to produce one unit of grains):
 
-      | F1|F2 |F3 | F4 |
-      ------------------
-oat   | 1 | 1 | 2 | 0  |
-------------------------
-wheat | 0 | 2 | 1 | 0  |
-------------------------
-corn  | 1 | 0 | 0 | 3  |
-------------------------
-barley| 0 | 1 | 1 | 1  |
-------------------------
-soy   | 2 | 0 | 0 | 2  |
-------------------------
+            | F1|F2 |F3 | F4 |
+            ------------------
+      oat   | 1 | 1 | 2 | 0  |
+      ------------------------
+      wheat | 0 | 2 | 1 | 0  |
+      ------------------------
+      corn  | 1 | 0 | 0 | 3  |
+      ------------------------
+      barley| 0 | 1 | 1 | 1  |
+      ------------------------
+      soy   | 2 | 0 | 0 | 2  |
+      ------------------------
 
 Keeping in mind that he has limited yearly quantities of each type of fertilizer, he would like to optimize his
 output according to the grains’ prices.
