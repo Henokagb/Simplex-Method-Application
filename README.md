@@ -7,7 +7,7 @@ A farmer grows grains: oat, wheat, corn, barley and soy. He uses four different 
 et F4), in the following quantities (per ton of fertilizer in order to produce one unit of grains):
 
             | F1|F2 |F3 | F4 |
-            ------------------
+      ------------------------
       oat   | 1 | 1 | 2 | 0  |
       ------------------------
       wheat | 0 | 2 | 1 | 0  |
