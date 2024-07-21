@@ -7,17 +7,17 @@ A farmer grows grains: oat, wheat, corn, barley and soy. He uses four different 
 et F4), in the following quantities (per ton of fertilizer in order to produce one unit of grains):
 
       | F1|F2 |F3 | F4 |
-      __________________
+      ------------------
 oat   | 1 | 1 | 2 | 0  |
-________________________
+------------------------
 wheat | 0 | 2 | 1 | 0  |
-________________________
+------------------------
 corn  | 1 | 0 | 0 | 3  |
-________________________
+------------------------
 barley| 0 | 1 | 1 | 1  |
-________________________
+------------------------
 soy   | 2 | 0 | 0 | 2  |
-________________________
+------------------------
 
 Keeping in mind that he has limited yearly quantities of each type of fertilizer, he would like to optimize his
 output according to the grains’ prices.
