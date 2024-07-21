@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+import sys
+import utils
+from simplex_process import solutions
+
+def usage():
+    print("USAGE\n./307multigrains n1 n2 n3 n4 po pw pc pb ps")
+    exit(0)
+
+def parse_args():
+    if len(sys.argv) != 10:
+        if len(sys.argv) == 2 and sys.argv[1] == "-h":
+            usage()
+        elif len(sys.argv) != 10:
+            exit(84)
+    for i in range(1, 10):
+        try:
+            if int(sys.argv[i]) < 0:
+                exit(84)
+        except:
+            exit(84)
+
+def print_resources():
+    print("Resources: ", end='')
+    for i in range(1, 5):
+        print("%s F%d" % (sys.argv[i], i), end='')
+        print(", ", end='') if i < 4 else print("\n")
+
+def assign_var():
+    utils.n1, utils.n2, utils.n3, utils.n4 = float(sys.argv[1]),float(sys.argv[2]), float(sys.argv[3]), float(sys.argv[4])
+    utils.po, utils.pw, utils.pc, utils.pb, utils.ps = float(sys.argv[5]), float(sys.argv[6]), float(sys.argv[7]), float(sys.argv[8]), float(sys.argv[9])
+    utils.tab[0][9], utils.tab[1][9], utils.tab[2][9], utils.tab[3][9] = utils.n1, utils.n2, utils.n3, utils.n4
+    utils.tab[4][0], utils.tab[4][1], utils.tab[4][2], utils.tab[4][3], utils.tab[4][4] = utils.po,utils.pw, utils.pc ,utils.pb, utils.ps
+
+
+if __name__ == "__main__":
+    parse_args()
+    print_resources()
+    assign_var()
+    solutions()
